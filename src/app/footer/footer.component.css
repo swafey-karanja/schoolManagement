@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 7vh;
+  bottom: 0;
+  position: fixed;
+  padding: 1rem;
+  background-color: #111;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+p{
+  margin-top: 10px;
+}
