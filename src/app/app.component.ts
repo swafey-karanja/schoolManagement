@@ -4,6 +4,8 @@ import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { CardsComponent } from "./cards/cards.component";
+import { PieChartComponent } from "./pie-chart/pie-chart.component";
+import { BarGraphComponent } from "./bar-graph/bar-graph.component";
 
 @Component({
     selector: 'app-root',
@@ -15,7 +17,9 @@ import { CardsComponent } from "./cards/cards.component";
       HeaderComponent,
       FooterComponent,
       SidebarComponent,
-      CardsComponent]
+      CardsComponent,
+      PieChartComponent,
+      BarGraphComponent]
 })
 export class AppComponent {
   title = 'schoolManagement';

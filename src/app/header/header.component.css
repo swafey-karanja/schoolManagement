@@ -7,6 +7,7 @@
   left: 0;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 .title{
@@ -14,7 +15,6 @@
   color: white;
   display: flex;
   justify-content: flex-start;
-
 }
 
 
