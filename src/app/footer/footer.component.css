@@ -1,13 +1,14 @@
 .container {
   width: 100vw;
-  height: 7vh;
+  height: 8vh;
   bottom: 0;
-  position: fixed;
+  position: relative;
   padding: 1rem;
   background-color: #111;
   color: white;
   box-sizing: border-box;
   text-align: center;
+  z-index: 1000;
 }
 
 p{

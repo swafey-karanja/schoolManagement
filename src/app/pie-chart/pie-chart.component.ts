@@ -1,10 +1,11 @@
 import { Component, ChangeDetectorRef} from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { CardsComponent } from "../cards/cards.component";
 
 @Component({
   selector: 'app-pie-chart',
   standalone: true,
-  imports: [],
+  imports: [CardsComponent],
   templateUrl: './pie-chart.component.html',
   styleUrl: './pie-chart.component.css'
 })

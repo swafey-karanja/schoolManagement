@@ -6,6 +6,8 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { CardsComponent } from "./cards/cards.component";
 import { PieChartComponent } from "./pie-chart/pie-chart.component";
 import { BarGraphComponent } from "./bar-graph/bar-graph.component";
+import { InvoicesComponent } from "./invoices/invoices.component";
+import { ModalFormComponent } from "./modal-form/modal-form.component";
 
 @Component({
     selector: 'app-root',
@@ -19,7 +21,9 @@ import { BarGraphComponent } from "./bar-graph/bar-graph.component";
       SidebarComponent,
       CardsComponent,
       PieChartComponent,
-      BarGraphComponent]
+      BarGraphComponent,
+      InvoicesComponent,
+      ModalFormComponent]
 })
 export class AppComponent {
   title = 'schoolManagement';

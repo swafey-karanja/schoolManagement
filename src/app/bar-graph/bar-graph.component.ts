@@ -50,7 +50,7 @@ export class BarGraphComponent {
               ]
             },
             options: {
-              aspectRatio: 3.5
+              aspectRatio: 3.0
             }
 
           });
