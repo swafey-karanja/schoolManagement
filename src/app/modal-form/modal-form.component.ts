@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild} from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-modal-form',
@@ -8,26 +8,9 @@ import { Component, ElementRef, ViewChild} from '@angular/core';
   styleUrl: './modal-form.component.css'
 })
 export class ModalFormComponent {
-  @ViewChild('modal') modal!: ElementRef;
+  @Output() closeModalEvent = new EventEmitter<void>();
 
-  ngAfterViewInit() {
-    this.setupClickOutside();
-  }
-
-  public openModal() {
-    this.modal.nativeElement.style.display = 'block';
-  }
-
-  public closeModal() {
-    this.modal.nativeElement.style.display = 'none';
-  }
-
-  public setupClickOutside() {
-    window.addEventListener('click', (event: MouseEvent) => {
-      if (event.target === this.modal.nativeElement) {
-        this.closeModal();
-      }
-    });
+  closeModal() {
+    this.closeModalEvent.emit();
   }
 }
-
