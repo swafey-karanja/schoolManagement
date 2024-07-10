@@ -13,13 +13,22 @@ export class InvoicesComponent {
   isModalOpen = false;
 
   people = [
-    { firstName: 'Jill', lastName: 'Smith', age: 50 },
-    { firstName: 'Eve', lastName: 'Jackson', age: 94 },
+    { SchoolName: 'UA Highschool', AmountDue: '200,000', DueDate: '2024-07-05' },
+    { SchoolName: 'Shiketsu Highschool', AmountDue: '150,000', DueDate: '2023-10-01' },
+    { SchoolName: 'USJ Highschool', AmountDue: '100,000', DueDate: '2024-01-05' },
     // Add more data as needed
   ];
 
+  ngOnInit() {
+    this.sortByDueDate();
+  }
+
+  sortByDueDate() {
+    this.people.sort((a, b) => new Date(a.DueDate).getTime() - new Date(b.DueDate).getTime());
+  }
+
   open(person: any) {
-    console.log(`Collecting data for ${person.firstName} ${person.lastName}`);
+    console.log(`Collecting data for ${person.SchoolName} ${person.AmountDue}`);
     // Add your modal opening logic here
     this.isModalOpen =true;
   }
