@@ -10,6 +10,7 @@ import { InvoicesComponent } from "./invoices/invoices.component";
 import { ModalFormComponent } from "./modal-form/modal-form.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { SchoolsPageComponent } from "./schools-page/schools-page.component";
+import { DetailspageComponent } from "./detailspage/detailspage.component";
 
 @Component({
     selector: 'app-root',
@@ -29,7 +30,8 @@ import { SchoolsPageComponent } from "./schools-page/schools-page.component";
       InvoicesComponent,
       ModalFormComponent,
       DashboardComponent,
-      SchoolsPageComponent]
+      SchoolsPageComponent,
+      DetailspageComponent]
 })
 export class AppComponent {
   title = 'schoolManagement';

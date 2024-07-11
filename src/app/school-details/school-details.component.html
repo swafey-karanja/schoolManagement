@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Upcoming invoices</h1>
+
+  <table>
+    <thead>
+    <tr>
+      <th>School Name</th>
+      <th>Product</th>
+      <th>Type</th>
+      <th>County</th>
+      <th>Quick Actions</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr *ngFor="let person of people">
+        <td>{{ person.SchoolName }}</td>
+        <td>{{ person.Product }}</td>
+        <td>{{ person.Type }}</td>
+        <td>{{ person.County }}</td>
+        <td>
+          <button (click)="navigateToDetails()" >
+            More Details
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<router-outlet></router-outlet>

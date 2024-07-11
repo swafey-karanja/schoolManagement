@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from '../footer/footer.component';
+import { SchoolDetailsComponent } from '../school-details/school-details.component';
 
 @Component({
   selector: 'app-schools-page',
@@ -9,7 +10,8 @@ import { FooterComponent } from '../footer/footer.component';
   imports: [
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SchoolDetailsComponent
   ],
   templateUrl: './schools-page.component.html',
   styleUrl: './schools-page.component.css'
