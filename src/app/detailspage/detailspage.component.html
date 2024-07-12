@@ -1,1 +1,39 @@
-<p>detailspage works!</p>
+<app-header></app-header>
+<div class="content">
+  <div class="school-details">
+    <span>
+      <p>School Name : Shiketsu High</p>
+      <p>School Type : IGSE</p>
+      <p>County : Nairobi</p>
+      <p>Product : XYZ</p>
+      <p>Registration Date : 2021-04-25</p>
+      <p>Contact Information : shiketsu-info.co.ke</p>
+      <p>School Balances : 60,000</p>
+    </span>
+  </div>
+  <hr>
+  <div class="invoices">
+    <table>
+      <thead>
+      <tr>
+        <th>Invoice ID</th>
+        <th>Status</th>
+        <th>Due Date</th>
+        <th>Quick Actions</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let invoice of invoices">
+          <td>{{ invoice.InvoiceID }}</td>
+          <td>{{ invoice.Status }}</td>
+          <td>{{ invoice.DueDate }}</td>
+          <td>
+            <button >Collect</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
