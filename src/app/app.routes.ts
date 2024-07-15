@@ -11,14 +11,11 @@ export const routes: Routes = [
   {
     path: 'schools',
     component: SchoolsPageComponent,
-    children:[
-
-    ]
   },
   {
     path: 'schools/details',
     title: 'School details',
-    component:DetailspageComponent
+    component:DetailspageComponent,
   },
   { path: '',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: DashboardComponent },

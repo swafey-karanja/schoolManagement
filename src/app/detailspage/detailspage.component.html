@@ -11,7 +11,30 @@
       <p>School Balances : 60,000</p>
     </span>
   </div>
+  <div class="add">
+    <button (click)="addInvoice()">Add invoice</button>
+  </div>
+
+  <div *ngIf="showForm" class="form">
+    <form class="form-inline" (ngSubmit)="onSubmit()">
+      <label for="invoiceId">Invoice ID:</label>
+      <input type="text" id="invoiceId" placeholder="Enter Form ID" name="invoiceId" [(ngModel)]="invoiceId" required>
+
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" name="dueDate" [(ngModel)]="dueDate" required>
+
+      <label for="status">Status:</label>
+      <select id="status" name="status" [(ngModel)]="status" required>
+        <option value="Pending">Pending</option>
+        <option value="Collected">Collected</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
   <hr>
+
   <div class="invoices">
     <table>
       <thead>
@@ -19,6 +42,8 @@
         <th>Invoice ID</th>
         <th>Status</th>
         <th>Due Date</th>
+        <th>Quick Actions</th>
+        <th>Quick Actions</th>
         <th>Quick Actions</th>
       </tr>
     </thead>
@@ -28,7 +53,13 @@
           <td>{{ invoice.Status }}</td>
           <td>{{ invoice.DueDate }}</td>
           <td>
-            <button >Collect</button>
+            <button >View</button>
+          </td>
+          <td>
+            <button >Update</button>
+          </td>
+          <td>
+            <button (click)="deleteInvoice(invoice)">Delete</button>
           </td>
         </tr>
       </tbody>
@@ -36,4 +67,5 @@
   </div>
 </div>
 
+<router-outlet></router-outlet>
 
