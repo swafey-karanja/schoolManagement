@@ -22,3 +22,26 @@
 .container:hover {
 box-shadow: 0 8px 16px 0 rgba(10, 2, 2, 0.753);
 }
+
+@media (max-width: 768px) {
+  .cards{
+    display: grid;
+    justify-content: space-around;
+    padding: 10px;
+    width: 250vw;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: #111111d0;
+    box-shadow: 0 4px 8px 0 rgba(44, 42, 42, 0.2);
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+}

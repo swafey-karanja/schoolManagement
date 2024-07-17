@@ -9,11 +9,15 @@
   width: 700px;
   height: 500px;
   margin-top: 20px;
- }
+}
 
- h2{
+.h2{
    margin-left: 215px;
- }
+}
+
+.h1{
+  font-size: 3rem;
+}
 
 .head{
   margin-top: 30px;
@@ -22,6 +26,41 @@
   flex-direction: column;
 }
 
-h1{
-  font-size: 3rem;
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 130vh;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .chart-container {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: grid;
+    margin-top: 0;
+  }
+
+  .h2{
+    margin-left: 120px;
+  }
+
+  .head{
+    width: 100%;
+    margin-left: 215px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .h1{
+
+    font-size: 2.5rem;
+  }
 }
+

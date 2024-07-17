@@ -48,3 +48,18 @@
   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
   display: none;
 }
+
+@media (max-width: 768px) {
+  .open-btn {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #111;
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}

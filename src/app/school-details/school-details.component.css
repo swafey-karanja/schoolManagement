@@ -38,6 +38,21 @@ button{
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .container{
+    height: calc(100vh - 16vh);
+    width: 250vw;
+    padding-top: 20px;
+  }
 
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+  }
+
+}
 
 

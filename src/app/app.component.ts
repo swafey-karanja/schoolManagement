@@ -31,7 +31,7 @@ import { DetailspageComponent } from "./detailspage/detailspage.component";
       ModalFormComponent,
       DashboardComponent,
       SchoolsPageComponent,
-      DetailspageComponent]
+      DetailspageComponent,]
 })
 export class AppComponent {
   title = 'schoolManagement';
